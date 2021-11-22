@@ -2,6 +2,8 @@ const HDWalletProvider = require("@truffle/hdwallet-provider");
 const Web3 = require("web3");
 const compiledFactory = require("./build/CampaignFactory.json");
 
+// get wallet provider for rinkeby
+// uses infura node api and mnemonic to gen accounts
 const provider = new HDWalletProvider(
 	"***REMOVED***",
 	"***REMOVED***"
@@ -9,6 +11,8 @@ const provider = new HDWalletProvider(
 
 const web3 = new Web3(provider);
 
+// deploy contract to rinkeby
+// logs resulting contract address to the console
 const deploy = async () => {
 	const accounts = await web3.eth.getAccounts();
 
