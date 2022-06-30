@@ -5,8 +5,8 @@ const compiledFactory = require("./build/CampaignFactory.json");
 // get wallet provider for rinkeby
 // uses infura node api and mnemonic to gen accounts
 const provider = new HDWalletProvider(
-	"***REMOVED***",
-	"***REMOVED***"
+	"",
+	""
 );
 
 const web3 = new Web3(provider);
